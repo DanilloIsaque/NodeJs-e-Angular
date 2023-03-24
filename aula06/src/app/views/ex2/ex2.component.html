@@ -1,0 +1,14 @@
+<hr>
+
+<h1>raçan</h1>
+<input type="text" placeholder="digite o nome da raça" [(ngModel)]="raca">
+<button (click)="imagem()">aperte</button>
+
+<img [src]="raca">
+
+
+<h2>jeito melhor de fazer </h2>
+
+<input type="text" placeholder="digite o nome da raça"  [(ngModel)]="cachorro">
+
+<img src="{{ 'assets/'+ cachorro + '.jpg'}}"> <!--dentro da interpolação é somente CÓDIGO-->

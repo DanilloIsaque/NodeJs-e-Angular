@@ -1,0 +1,8 @@
+<h1>binding de duas vias </h1>
+<!--banana in-a-box ;tem q ligar a bind duas vias no "module.ts"-->
+<!--se mudar no html , muda no variavel e vice versa  [propertbind(eventbind)]-->
+<input type="text" [(ngModel)]="nome">
+
+
+{{nome}}
+ <button (click)="mudarNome()">aperte</button> <!--ao apertar, mudara no input e na variavel-->
