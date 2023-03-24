@@ -1,0 +1,36 @@
+.vermelho{
+  color: white;
+  background-color: red;
+}
+.azul{
+  background-color: lightblue;
+  color:green;
+}
+.visivel{
+  width: 300px;
+  height: 200px;
+  border: 1px solid black;
+  display: block;
+
+}
+.invisivel{
+/*deixar ela invisivel*/display: none;
+}
+.trocaverm{
+  width: 300px;
+  height: 200px;
+  border: solid 1px black;
+  background-color: red;
+}
+.trocaverd{
+  width: 300px;
+  height: 200px;
+  border: solid 1px black;
+  background-color: green;
+}
+.trocaazul{
+  width: 300px;
+  height: 200px;
+  border: solid 1px black;
+  background-color: blue;
+}

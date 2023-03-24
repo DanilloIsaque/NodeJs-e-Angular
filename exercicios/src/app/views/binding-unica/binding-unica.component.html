@@ -1,0 +1,65 @@
+
+<!--. Crie três propriedades: uma com o nome de uma música, outra com o nome do álbum onde a música
+se encontra e outra com o nome do intérprete. Faça com que os dados da música apareçam na página,
+cada um em uma div. Estilize as divs como preferir.
+-->
+<h2>exercicio 1 da lista</h2>
+
+<div >musica--{{musica}}</div><br>
+<div >album--{{album}}</div><br>
+<div >interprete--{{interprete}}</div><br>
+<hr>
+<h2>exercicio 2 da lista</h2>
+<!--Crie um método capaz de efetuar a soma de dois valores, fornecidos por parâmetro. Chame o método
+na página, via interpolação, atribuindo dois valores para os parâmetros, a sua escolha.
+-->
+{{soma(1,1)}}
+
+<hr>
+<h2>exercicio 3 da lista</h2>
+<!--Crie duas classes CSS, uma com fundo vermelho e cor de fonte branca (chame a classe de “vermelho”)
+e outra com fundo azul claro e cor de fonte verde (chame a classe de “azul”). Crie uma propriedade no
+TypeScript chamada classeCss, com valor inicial de “vermelho” e um elemento de parágrafo no HTML
+com texto aleatório. Atribua a propriedade classeCss no atributo class do p criado e defina um botão
+capaz de alternar entre as classes quando clicado-->
+
+<p [class]="classeCss"> corinthianssssssssssssssssssss</p>
+<button (click)="mudarCor()">mude a cor, parçã</button>
+
+<hr>
+<h2>exercicio 4 da lista</h2>
+<!--Escolha 3 imagens de raças de cachorros diferentes. Faça com que cliques em botões diferentes
+mostrem a respectiva imagem da raça de cachorro quando clicados. Utilize bindings de via única.-->
+<button  (click)="trocarImg(1)">pinscher</button>
+<button (click)="trocarImg(2)">caramelo</button>
+<button (click)="trocarImg(3)">yorkshire</button>
+<img [src]="trocarImg1"[class]='trocarImg1' >
+<img [src]="trocarImg2" [class]="trocarImg2">
+<img [src]="trocarImg3" [class]="trocarImg3">
+
+<hr>
+<h2>exercicio 5 da lista</h2>
+<!--Ao clicar num botão, utilize um prompt para ler o nome do usuário. Faça com que o nome apareça na
+página via interpolação.-->
+
+<button (click)="nome()">entre com o nome</button>
+
+<hr>
+<h2>exercicio 6 da lista</h2>
+<!--Crie uma div que, quando clicada, insira o texto “isso é uma div” em seu interior.
+-->
+<div (click)="troca()" style="background-color:burlywood;
+width: 250px;
+height: 50px;"></div>
+
+
+<hr>
+<h2>exercicio 7 da lista</h2>
+<!--Usando bindings de via única, faça com que botões permitam alterar a cor de fundo de uma div entre
+vermelho, verde e azul (cada cor num botão).-->
+
+<button (click)="corDiv(1)" >vermelho</button>
+<button (click)="corDiv(2)">verde</button>
+<button (click)="corDiv(3)">azul</button>
+
+<div [class]="classeCss2"></div>
