@@ -1,0 +1,19 @@
+<h1>exemplo *ngFor</h1>
+
+<ol>
+    <div *ngFor="let animal of bichos; let i=index"><!--index vai cjamar a posicao dp vetor-->
+        {{animal}}-{{i}}
+
+    </div>
+</ol>
+
+<hr>
+
+<h1>nome de filme com imagem</h1>
+<ol>
+    <li *ngFor="let filme of filmes">
+        {{filme}}
+        <img src="assets/{{filme}}.jfif" width="200px" height="200px" >
+        
+    </li>
+</ol>

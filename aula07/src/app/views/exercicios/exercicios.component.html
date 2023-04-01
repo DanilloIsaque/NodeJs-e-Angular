@@ -6,16 +6,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <style>
-    div{
+    #sumir{
       width: 100px;
       height:100px;
       background-color: red;
     }
+
   </style>
 </head>
 <body>
   <button (click)="mostrar()">aparecer</button>
-  <div *ngIf="valor=='invisivel'"></div>
+  <div id="sumir"*ngIf="valor=='invisivel'"></div>
 
   <hr>
 <h2>imagem aparecer conforme digito</h2>
@@ -23,6 +24,36 @@
 
   <img src="assets/OIP.jfif" *ngIf="texto!=''" >
   <img src="assets/erro.png" *ngIf="texto==''" >
+
+  <hr>
+  <h1>exercicio 3</h1>
+
+  <input type="number" [(ngModel)]="numero">
+  <div *ngIf="numero>0">Numero positivo</div>
+  <div *ngIf="numero<0">numero negativo</div>
+  <div *ngIf="numero==0">zero</div>
+
+  <hr>
+  <h1>exercicio 4</h1>
+  <select [(ngModel)]="tipoContato">
+    <option value="zap">WhatsApp</option>
+    <option value="email">E-mail</option>
+  </select>
+
+  <input *ngIf="tipoContato =='email'" type="email" placeholder="email">
+  <input *ngIf="tipoContato =='zap'" type="tel" placeholder="numero">
+
+<hr>
+<h1>exercicio 5</h1>
+<input [(ngModel)]="valor1" type="number" >
+<input [(ngModel)]="valor2" type="number"><br>
+
+<button *ngIf=" valor1 or valor2 !=''" (click)="calcular('+')">+</button><br>
+<button *ngIf=" valor1 or valor2 !='' "(click)="calcular('-')">-</button><br>
+<button *ngIf=" valor1 or valor2 !=''" (click)="calcular('*')">*</button><br>
+<button  *ngIf=" valor1 or valor2 !=''"(click)="calcular('/')">/</button>
+
+<p>{{resultado}}</p>
 
 
 </body>

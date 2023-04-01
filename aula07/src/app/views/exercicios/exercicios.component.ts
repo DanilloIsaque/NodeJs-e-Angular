@@ -16,5 +16,24 @@ export class ExerciciosComponent {
   }
 
   texto='';
+  numero=0;
 
+  tipoContato='';
+
+  valor1= 0;
+  valor2= 0;
+
+  resultado = 0;
+
+  calcular(op:string){
+    if(op=="+"){
+      this.resultado= this.valor1 + this.valor2;
+    }else if(op=="-"){
+      this.resultado= this.valor1 - this.valor2;
+    }else if(op=="*"){
+      this.resultado= this.valor1 * this.valor2;
+    }else{
+      this.resultado= this.valor1 / this.valor2;
+    }
+  }
 }
