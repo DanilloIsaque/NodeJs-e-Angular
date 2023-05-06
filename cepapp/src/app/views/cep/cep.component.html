@@ -1,0 +1,11 @@
+<h2>Consulta CEP</h2>
+<input type="text" [(ngModel)]="cep" >
+<button (click)="consultarCep()">Pesquisar</button>
+
+<div *ngIf="endereco!=undefined">
+  <p>{{endereco?.cep}}</p>
+  <p>{{endereco?.logradouro}}</p>
+  <p>{{endereco?.localidade}}</p>
+  <p>{{endereco?.uf}}</p>
+  <p>{{endereco?.bairro}}</p>
+  </div>
