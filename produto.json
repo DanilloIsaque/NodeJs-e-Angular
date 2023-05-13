@@ -1,0 +1,16 @@
+{
+  "produto": [
+    {
+      "nome": "picanha",
+      "codigo": "131313",
+      "tipo": "sonho",
+      "id": 1
+    },
+    {
+      "nome": "arroz",
+      "codigo": "12348674",
+      "tipo": "alimento",
+      "id": 2
+    }
+  ]
+}
