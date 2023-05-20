@@ -1,5 +1,5 @@
 export class Cliente{
-  id="";
+  id=0;
   nome="";
   cpf="";
 }

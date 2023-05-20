@@ -6,9 +6,24 @@
       "id": 2
     },
     {
-      "nome": "Brito",
+      "nome": "Britoaasdas24412",
       "cpf": "12345678977",
       "id": 3
+    },
+    {
+      "id": 4,
+      "nome": "isab",
+      "cpf": "454515454"
+    },
+    {
+      "id": 5,
+      "nome": "isab2",
+      "cpf": "454515454"
+    },
+    {
+      "id": 6,
+      "nome": "isabb",
+      "cpf": "123"
     }
   ],
   "produto": [
@@ -25,6 +40,4 @@
       "id": 2
     }
   ]
-
-  
 }
