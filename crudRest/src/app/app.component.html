@@ -1,8 +1,31 @@
 <!-- para chamar as rotas  -->
-<h1>app</h1>
-<a routerLink="cliente">Cliente</a>
-<a routerLink="sobre">Sobre</a>
-<router-outlet></router-outlet>
+<mat-toolbar color="primary">
+  <mat-toolbar-row>
+    <button mat-icon-button (click)="sidenav.toggle()">
+      <mat-icon>
+        menu
+      </mat-icon>
+    </button>
+    Gestor de clientes
+  </mat-toolbar-row>
+</mat-toolbar>
+
+<!-- #jeito de "dai id" no angular -->
+<mat-sidenav-container>
+  <mat-sidenav #sidenav mode="push" [opened] ="true">
+      <mat-list>
+        <a mat-list-item routerLink="cliente">Cliente</a>
+        <a mat-list-item routerLink="sobre">Sobre</a>
+      </mat-list>
+  </mat-sidenav>
+  <mat-sidenav-content style="min-height:calc(100vh-60px)">
+    <mat-card>
+      <router-outlet></router-outlet>
+    </mat-card>
+  </mat-sidenav-content>
+</mat-sidenav-container>
+
 
 <footer>footer</footer>
+
 <!-- não sai em nenhuma pagina, tipo layout em laravel -->

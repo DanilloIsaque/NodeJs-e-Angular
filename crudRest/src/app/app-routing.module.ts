@@ -7,7 +7,7 @@ const routes: Routes = [
   {path:'cliente',component:ClienteComponent },
   {path:'sobre',component:SobreComponent},
   //se tiver outra rota
-  {}
+
 ];
 
 @NgModule({

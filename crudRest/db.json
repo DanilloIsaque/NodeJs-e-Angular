@@ -1,19 +1,48 @@
 {
-  "posts": [
+  "cliente": [
     {
-      "id": 1,
-      "title": "json-server",
-      "author": "typicode"
+      "nome": "Isaque",
+      "cpf": "12345678977",
+      "id": 2
+    },
+    {
+      "nome": "Britoaasdas24412dsdas",
+      "cpf": "12345678977",
+      "id": 3
+    },
+    {
+      "id": 4,
+      "nome": "isab",
+      "cpf": "454515454"
+    },
+    {
+      "id": 5,
+      "nome": "isab2",
+      "cpf": "454515454"
+    },
+    {
+      "id": 6,
+      "nome": "isabb",
+      "cpf": "123"
+    },
+    {
+      "id": 7,
+      "nome": "fadfasf",
+      "cpf": "dasdas"
     }
   ],
-  "comments": [
+  "produto": [
     {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
+      "nome": "picanha",
+      "codigo": "131313",
+      "tipo": "sonho",
+      "id": 1
+    },
+    {
+      "nome": "arroz",
+      "codigo": "12348674",
+      "tipo": "alimento",
+      "id": 2
     }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+  ]
 }
